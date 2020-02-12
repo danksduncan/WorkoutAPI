@@ -8,23 +8,15 @@ using WorkoutAPI.Models;
 
 namespace WorkoutAPI.Controllers
 {
-    /// <summary>
-    ///  This is where I give you all the information about each person.
-    /// </summary>
     public class PeopleController : ApiController
     {
         List<Person> people = new List<Person>();
         public PeopleController()
         {
-            people.Add(new Person { FirstName = "Flex", LastName = "Armstrong", Id = 1 });
+            people.Add(new Person { FirstName = "Tim", LastName = "Armstrong", Id = 1 });
             people.Add(new Person { FirstName = "Bo", LastName = "Flexington", Id = 2 });
             people.Add(new Person { FirstName = "Mack", LastName = "Jackedson", Id = 3 });
         }
-
-        /// <summary>
-        /// Gets a list of the first names of all users.
-        /// </summary>
-        /// <returns>A list of first names.</returns>
         [Route("api/People/GetFirstNames")]
         [HttpGet]
         public List<string> GetFirstNames()
