@@ -13,7 +13,7 @@ namespace WorkoutAPI.Controllers
         List<Person> people = new List<Person>();
         public PeopleController()
         {
-            people.Add(new Person { FirstName = "Tim", LastName = "Armstrong", Id = 1 });
+            people.Add(new Person { FirstName = "Tim", LastName = "Bill", Id = 1 });
             people.Add(new Person { FirstName = "Bo", LastName = "Flexington", Id = 2 });
             people.Add(new Person { FirstName = "Mack", LastName = "Jackedson", Id = 3 });
         }
